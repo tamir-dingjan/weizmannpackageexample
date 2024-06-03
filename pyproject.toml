@@ -5,15 +5,23 @@ build-backend = "hatchling.build"
 [project]
 name = "weizmannpackageexample"
 version = "0.0.1"
-dependencies = ["numpy>1.24", "polars"]
+dependencies = [
+    "numpy>1.24",
+    "polars",
+    "matplotlib",
+    "ipywidgets",
+    "scikit-learn == 1.5.*",
+    "tqdm",
+    "ipympl",
+]
 authors = [
-    {name="Michael Sokoletsky", email="michael.sokoletsky@weizmann.ac.il"},
-    {name="Tamir Dingjan", email="tamir.dingjan@weizmann.ac.il"}
+    { name = "Michael Sokoletsky", email = "michael.sokoletsky@weizmann.ac.il" },
+    { name = "Tamir Dingjan", email = "tamir.dingjan@weizmann.ac.il" },
 ]
 description = "An example layout for a data analysis package"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "Operating System :: OS Independent"
+    "Operating System :: OS Independent",
 ]
